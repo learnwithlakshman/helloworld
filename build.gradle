@@ -11,6 +11,15 @@ plugins {
 	id 'java'
 }
 
+plugins {
+    id "org.sonarqube" version "2.6.2"
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectVersion", "0.0.1.SNAPSHOT"
+    }
+}
 group = 'com.lwl'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
