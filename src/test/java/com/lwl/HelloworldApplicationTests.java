@@ -16,33 +16,37 @@ public class HelloworldApplicationTests {
 	
 	@Autowired
 	private NumberService numberService;
-	public void contextLoads() {
-	}
 	
 	@Test
 	public void evenTest() {
-		assertEquals(true, numberService.isEven(10));
+		boolean res = numberService.isEven(10);
+		assertEquals(true,res);
 	}
 	
 	@Test
 	public void oddTest() {
-		assertEquals(false, numberService.isEven(3));
+		boolean res =  numberService.isEven(3);
+		assertEquals(false,res);
 	}
 	@Test
 	public void isPrimeWithPrimeTest() {
-		assertEquals(true, numberService.isPrime(3));
+		boolean res = numberService.isPrime(3);
+		assertEquals(true, res);
 	}
 	@Test
 	public void isPrimeNonPrimeTest() {
-		assertEquals(false, numberService.isPrime(10));
+		boolean res = numberService.isPrime(10);
+		assertEquals(false, res);
 	}
 	@Test
 	public void isPrimeLess2Test() {
-		assertEquals(false, numberService.isPrime(1));
+		boolean res = numberService.isPrime(1);
+		assertEquals(false, res);
 	}
 	@Test
 	public void isPrimeWithEvenTest() {
-		assertEquals(true, numberService.isPrime(2));
+		boolean res = numberService.isPrime(2);
+		assertEquals(true, res);
 	}
 
 }
