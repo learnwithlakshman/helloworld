@@ -37,15 +37,3 @@ dependencies {
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
 }
 
-jacoco {
-		toolVersion = "0.7.9"
-		reportsDir = file("$buildDir/customJacocoReportDir")
-}
-jacocoTestReport {
-		reports {
-		xml.enabled false
-		csv.enabled false
-		html.destination file("${buildDir}/jacocoHtml")
-		
-		}
-}
