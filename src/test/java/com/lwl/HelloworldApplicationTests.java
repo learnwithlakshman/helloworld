@@ -28,5 +28,21 @@ public class HelloworldApplicationTests {
 	public void oddTest() {
 		assertEquals(false, numberService.isEven(3));
 	}
+	@Test
+	public void isPrimeWithPrimeTest() {
+		assertEquals(true, numberService.isPrime(3));
+	}
+	@Test
+	public void isPrimeNonPrimeTest() {
+		assertEquals(false, numberService.isPrime(10));
+	}
+	@Test
+	public void isPrimeLess2Test() {
+		assertEquals(false, numberService.isPrime(1));
+	}
+	@Test
+	public void isPrimeWithEvenTest() {
+		assertEquals(true, numberService.isPrime(2));
+	}
 
 }
